@@ -74,3 +74,10 @@ def function(a=None, b=None, point=None):
 function() # calls the function without specified non-default parameters
 
 
+#easy plotting:
+# side note: if show does not work: check if you are running the correct code!!
+import matplotlib.pyplot as plt
+a = plt.plot(values)
+plt.ylabel('some numbers')
+plt.show(a)
+
