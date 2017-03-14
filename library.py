@@ -81,3 +81,5 @@ a = plt.plot(values)
 plt.ylabel('some numbers')
 plt.show(a)
 
+# seeing the documentation of a certain function in detail: ctrl+B , automatically opens it in new window with fct name
+# short look on function: ctrl + Q
