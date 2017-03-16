@@ -83,3 +83,5 @@ plt.show(a)
 
 # seeing the documentation of a certain function in detail: ctrl+B , automatically opens it in new window with fct name
 # short look on function: ctrl + Q
+
+#error: function  not callable (e.g. in optimize.fmin_ncg) try putting it in without any brackets after: function instead of function() or function(parameters)
