@@ -85,3 +85,5 @@ plt.show(a)
 # short look on function: ctrl + Q
 
 #error: function  not callable (e.g. in optimize.fmin_ncg) try putting it in without any brackets after: function instead of function() or function(parameters)
+# check if a function is callable:
+print(callable(f_callable(numbers)))
