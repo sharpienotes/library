@@ -17,6 +17,8 @@ print('######################################')
 # arrays and stuff:
 sphere_here = np.empty([3,3,3], dtype = complex)
 # note: random is between zero and one
+# array  in range between 4 and 31 : 
+other_array = np.arange(4,31).reshape(3,3,3)
 data_temp_proxy = np.random.random([3,3,3,5,4])
 a = np.arange(15).reshape(3, 5)
 print(a)
