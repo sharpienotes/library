@@ -92,3 +92,7 @@ print(callable(f_callable(numbers)))
 
 # powers of tens and other numbers: (results in zero if you forget the point!!!!!)
 lambda_proxy = np.power(10.,-3)
+
+# array full of sin functions in the right shape:
+arr_sin = np.asarray([np.sin for j in range(27)])
+arr_sin = arr_sin.reshape((3,3,3))
