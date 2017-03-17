@@ -1,0 +1,9 @@
+this library is a collection of useful expressions and synthax in Mathematica
+f[x_] := Sin[x] + 10
+# getting the derivative of f:
+f'[x]
+
+# same thing different function:
+f[x_] := 2 x + 12
+D[f[x], x]
+
