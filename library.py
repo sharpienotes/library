@@ -99,3 +99,8 @@ arr_sin = arr_sin.reshape((3,3,3))
 
 # gradient of arrays (first derivative in each direction, gives array again)
 grad_test = np.gradient(data_proxy)
+
+# printing a sum that gives actual number and not just location of result storage:
+testingthing = (abs(W_proxy))
+bbb = np.sum(testingthing)
+print(str(bbb))
