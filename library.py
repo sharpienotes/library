@@ -89,3 +89,6 @@ plt.show(a)
 #error: function  not callable (e.g. in optimize.fmin_ncg) try putting it in without any brackets after: function instead of function() or function(parameters)
 # check if a function is callable (gives a boolean result):
 print(callable(f_callable(numbers)))
+
+# powers of tens and other numbers: (results in zero if you forget the point!!!!!)
+lambda_proxy = np.power(10.,-3)
