@@ -47,3 +47,20 @@ RowBox[{"(",
 RowBox[{"1", ",", "0"}], ")"}],
 Derivative],
 MultilineFunction->None]\)[Grad[chi_,x] M_G, 1]
+
+
+
+
+% longer trial:
+chiStar[chi[{x1, x2, x3}, {y1, y2, y3}, {z1, z2, 
+     z3}] _] := ((1/
+      2)*(Norm[
+       Dot[W[{x1, x2, x3}, {y1, y2, y3}, {z1, z2, 
+          z3}], (f[{x1, x2, x3}, {y1, y2, y3}, {z1, z2, z3}] - 
+          Convolve[d[{x1, x2, x3}, {y1, y2, y3}, {z1, z2, z3}], 
+           chi[{x1, x2, x3}, {y1, y2, y3}, {z1, z2, z3}], {x1, x2, 
+            x3}, {y1, y2, y3}])], 2])^2) + 
+  lambda*Norm[
+    M_G[{x1, x2, x3}, {y1, y2, y3}, {z1, z2, z3}] * (Grad[
+       chi[{x1, x2, x3}, {y1, y2, y3}, {z1, z2, z3}], {{x1, x2, 
+         x3}, {y1, y2, y3}, {z1, z2, z3}}]), 1]
