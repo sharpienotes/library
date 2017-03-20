@@ -22,3 +22,28 @@ Norm[expr,p]
 # non functioning trial version of the big f function:
 
 chiStar[chi_] := (0.5*(Norm[Dot[W, (f - Convolve[d[x], chi[x], x, y])], 2])^2)+lambda*Norm[M_G * (Grad[chi, {x_ 1, ..., x_n}]), 1]
+first trial derivative: (looks better in mathematica script)
+1. ({}.(f - Convolve[d[x], chi_[x], x, y]) + {}.(-Convolve[d[x], 
+\!\(\*SuperscriptBox[\(Pattern\), 
+TagBox[
+RowBox[{"(", 
+RowBox[{"1", ",", "0"}], ")"}],
+Derivative],
+MultilineFunction->None]\)[chi, _][x], x, y])) Norm[{}.(f - 
+      Convolve[d[x], chi_[x], x, y]), 2] 
+\!\(\*SuperscriptBox[\(Norm\), 
+TagBox[
+RowBox[{"(", 
+RowBox[{"1", ",", "0"}], ")"}],
+Derivative],
+MultilineFunction->None]\)[{}.(f - Convolve[d[x], chi_[x], x, y]), 
+   2] + lambda \!\(
+\*SubscriptBox[\(\[PartialD]\), \(chi\)]\*
+TemplateBox[{"chi_","x"},
+"Grad"]\) M_G 
+\!\(\*SuperscriptBox[\(Norm\), 
+TagBox[
+RowBox[{"(", 
+RowBox[{"1", ",", "0"}], ")"}],
+Derivative],
+MultilineFunction->None]\)[Grad[chi_,x] M_G, 1]
