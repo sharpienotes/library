@@ -20,5 +20,5 @@ manipulate and then a function to play with it (e.g. Manipulate[Plot[Sin[x (1 + 
 Norm[expr,p]
 
 # non functioning trial version of the big f function:
-chi_star := (0.5*(Norm[Dot[W, (f - Convolve[d[x], chi[x], x, y])], 2])^2) + lambda*Norm[M_G * (Grad[chi, {x_ 1, ..., x_n}], 1]
+chiStar := (0.5*(Norm[Dot[W, (f - Convolve[d[x], chi[x], x, y])], 2])^2) + lambda*Norm[M_G * (Grad[chi, {x_ 1, ..., x_n}], 1]
 
