@@ -10,3 +10,8 @@ D[f[x], x]
 # the basic functions ad their synthax can be found here:
 https://reference.wolfram.com/language/tutorial/SomeMathematicalFunctions.html
 
+esc esc for special characters
+
+f1 to get documentation on sth once it is marked blue and curser on it
+
+manipulate and then a function to play with it (e.g. Manipulate[Plot[Sin[x (1 + a x)], {x, 0, 6}], {a, 0, 2}]) 
