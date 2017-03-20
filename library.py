@@ -104,3 +104,9 @@ grad_test = np.gradient(data_proxy)
 testingthing = (abs(W_proxy))
 bbb = np.sum(testingthing)
 print(str(bbb))
+
+# unit/identity matrix:
+identity_matrix = np.asarray([np.identity(3),np.identity(3),np.identity(3)])
+
+# standard deviation:
+standard_deviation = np.std(data_proxy)
