@@ -110,3 +110,7 @@ identity_matrix = np.asarray([np.identity(3),np.identity(3),np.identity(3)])
 
 # standard deviation:
 standard_deviation = np.std(data_proxy)
+
+# dot produt: (result are only entries on the diagonal with the value of standard_deviation)
+W_true_proxy = np.dot(identity_matrix, standard_deviation)
+
