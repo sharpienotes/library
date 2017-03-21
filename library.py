@@ -114,3 +114,8 @@ standard_deviation = np.std(data_proxy)
 # dot produt: (result are only entries on the diagonal with the value of standard_deviation)
 W_true_proxy = np.dot(identity_matrix, standard_deviation)
 
+# getting .nii data into the python environment:
+import nibabel as nib
+from pymrt.input_output import load, save
+a = load('/home/file_path/file_name.nii.gz')
+print(a.shape) # to check if it is there, strictly not necessary
