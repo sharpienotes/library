@@ -126,3 +126,10 @@ testingthing = 5*np.identity(3)
 otherother = np.arange(9)
 otherother = otherother.reshape((3,3))
 print(np.multiply(testingthing,otherother))
+
+# getting the time of one run:
+import datetime
+begin_time=datetime.datetime.now()
+end_time=datetime.datetime.now()
+time_elapsed = end_time - begin_time
+print('Time elapsed: {c} seconds!'.format(c=time_elapsed))
