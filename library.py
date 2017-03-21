@@ -119,3 +119,10 @@ import nibabel as nib
 from pymrt.input_output import load, save
 a = load('/home/file_path/file_name.nii.gz')
 print(a.shape) # to check if it is there, strictly not necessary
+
+
+# testing how the matrix multiplication (np.multiply) element-wise works:
+testingthing = 5*np.identity(3)
+otherother = np.arange(9)
+otherother = otherother.reshape((3,3))
+print(np.multiply(testingthing,otherother))
