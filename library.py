@@ -152,3 +152,7 @@ def odd_func(x):
     return x
 
 odd_func(4)
+
+# calling the function:
+if __name__ == '__main__':
+    # here comes the function that is to be called, indented like this
