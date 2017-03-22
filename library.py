@@ -133,3 +133,7 @@ begin_time=datetime.datetime.now()
 end_time=datetime.datetime.now()
 time_elapsed = end_time - begin_time
 print('Time elapsed: {c} seconds!'.format(c=time_elapsed))
+
+# some short versions of loops:
+print([x.shape for x in (chi, f, d, M_G, W, lambda_)])
+return([x for x in (data, shape)])
