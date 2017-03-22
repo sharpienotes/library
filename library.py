@@ -137,3 +137,18 @@ print('Time elapsed: {c} seconds!'.format(c=time_elapsed))
 # some short versions of loops:
 print([x.shape for x in (chi, f, d, M_G, W, lambda_)])
 return([x for x in (data, shape)])
+
+# function inside function (y part not necessary)
+
+def odd_func(x):
+    x=1+x
+    y = x
+    def other_function(y):
+        y=y-1
+        x=y
+        return x
+    print('First way: '+str(other_function(x)))
+    print('Serond way: '+str(x))
+    return x
+
+odd_func(4)
