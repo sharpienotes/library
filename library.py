@@ -182,3 +182,6 @@ abc = duck * 5
 defg = duck * 25
 hij = np.divide(defg,abc)
 print(hij)
+
+# random array of specified size:
+  print(np.random.rand(3,3,3))
