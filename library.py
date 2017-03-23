@@ -156,3 +156,15 @@ odd_func(4)
 # calling the function:
 if __name__ == '__main__':
     # here comes the function that is to be called, indented like this
+    
+ # accessing stuff modified within a function: (no need to worry about the other parameters, only alpha and gamma!)
+alpha = 1
+gamma = 1
+ def deriv_func(d=d,W=W, P=P, lambda_=lambda_, M_G=M_G, chi=chi,
+            epsilon=epsilon,f=f, alpha=alpha, gamma=gamma):
+        alpha = a + b * c * d
+        gamma = e * (f- g) - h * c * j
+        return [x for x in [alpha, gamma]]
+    
+alpha, gamma = deriv_func(alpha=alpha, gamma=gamma)
+print(alpha.shape)
