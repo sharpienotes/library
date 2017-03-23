@@ -168,3 +168,11 @@ gamma = 1
     
 alpha, gamma = deriv_func(alpha=alpha, gamma=gamma)
 print(alpha.shape)
+
+# Moore-Penrose pseudo inverse:
+daisy = [[1,2],[3,4]] # works fine with pinv
+duck = np.ones((3,3)) # works fine with pinv
+test = np.ones((3,3,3,3)) # pinv cannot handle this 
+
+beta = np.linalg.pinv(test)
+print(beta.shape)
