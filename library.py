@@ -176,3 +176,9 @@ test = np.ones((3,3,3,3)) # pinv cannot handle this
 
 beta = np.linalg.pinv(test)
 print(beta.shape)
+
+# element-wise division of arrays:
+abc = duck * 5
+defg = duck * 25
+hij = np.divide(defg,abc)
+print(hij)
