@@ -193,4 +193,5 @@ chi = np.asarray([[[ 0.36108928,  0.62471217,  0.84588093], [ 0.41268617,  0.989
 # function of other function:
 def comparison(chi_star_func,deriv_func):
     
- 
+ # error: too many values to unpack
+# solution: probs called a function that does not return all that is to be reassigned here now
