@@ -195,3 +195,7 @@ def comparison(chi_star_func,deriv_func):
     
  # error: too many values to unpack
 # solution: probs called a function that does not return all that is to be reassigned here now
+
+# comment out more than one line at a time:
+# control + /
+
